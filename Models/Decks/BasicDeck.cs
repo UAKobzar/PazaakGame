@@ -22,7 +22,7 @@ namespace Models.Decks
             return _deck.Dequeue();
         }
 
-        private void Shuffle()
+        public void Shuffle()
         {
             _deck = new Queue<ICard>();
             List<ICard> cards = new List<ICard>();

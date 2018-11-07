@@ -10,20 +10,27 @@ namespace Models.Player
 {
     public class Player
     {
-        public Board _board;
-        public SideDeck _sideDeck;
-
-        private bool _stand = false;
+        public Board Board { get; private set; }
+        public SideDeck SideDeck { get; private set; }
+        public int Wins { get; set; }
 
         public void Reset()
         {
-            _board.Reset();
+            Board.Reset();
             _stand = false;
         }
 
-        public void Stand()
+        private bool _stand = false;
+        public bool Stand { get; private set; }
+
+        public void StandMove()
         {
             _stand = true;
+        }
+
+        public void PlaySideCard(int index)
+        {
+            Board.AddToBoard(SideDeck.PickCard(index));
         }
     }
 }

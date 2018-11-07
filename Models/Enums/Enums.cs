@@ -22,4 +22,19 @@ namespace Models.Enums
         DoubleCard,
         Tiebreaker
     }
+
+    public enum Turn
+    {
+        End,
+        Stand,
+        SideCard
+    }
+
+    public enum GameResult
+    {
+        Running,
+        Player1Win,
+        Player2Win,
+        Tie
+    }
 }

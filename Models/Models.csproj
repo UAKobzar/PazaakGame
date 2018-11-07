@@ -50,6 +50,7 @@
     <Compile Include="Enums\Enums.cs" />
     <Compile Include="Exceptions\CardTyreException.cs" />
     <Compile Include="Exceptions\CardValueException.cs" />
+    <Compile Include="GameManager\GameManager.cs" />
     <Compile Include="Interfaces\ICard.cs" />
     <Compile Include="Player\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

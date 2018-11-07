@@ -45,5 +45,10 @@ namespace Models
         {
             _cards = new ICard[9];
         }
+
+        public bool HasTieBreaker()
+        {
+            return _cards.Where(c => c != null).Any(c => c.CardType == Enums.CardType.Tiebreaker);
+        }
     }
 }
